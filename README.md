@@ -1,71 +1,54 @@
-# Getting Started with Create React App
+# Documentação do Frontend do Projeto de Gestão de Faturas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este documento fornece uma visão geral do frontend do projeto de gestão de faturas, incluindo as dependências utilizadas, a estrutura do projeto e as instruções para configurar e rodar a aplicação.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- React
+- React Router
+- Bootstrap
+- TailwindCSS
+- Chart.js
+- Axios
+- React Icons
+- React Bootstrap
+- React Loader Spinner
 
-### `npm start`
+## Estrutura do Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Estrutura do Diretório `src`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `src/App.js`: Componente principal que define as rotas da aplicação.
+- `src/components/Navbar.js`: Componente de navegação.
+- `src/components/Footer.js`: Componente de rodapé.
+- `src/components/Dashboard.js`: Componente do dashboard que exibe os gráficos de consumo de energia e valores monetários.
+- `src/components/InvoiceLibrary.js`: Componente que exibe a biblioteca de faturas.
+- `src/index.css`: Arquivo de estilos principais.
 
-### `npm test`
+## Preparação do Ambiente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Passos Iniciais
 
-### `npm run build`
+1. Instale as dependências do projeto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   `npm install` 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. inicie o projeto com: 
+  
+`npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Estrutura de Componentes
+Navbar (src/components/Navbar.js)
+Componente responsável pela navegação principal da aplicação.
 
-### `npm run eject`
+Footer (src/components/Footer.js)
+Componente responsável pelo rodapé da aplicação.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Dashboard (src/components/Dashboard.js)
+Componente que exibe os gráficos de consumo de energia elétrica e valores monetários utilizando o react-chartjs-2 e chart.js.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+InvoiceLibrary (src/components/InvoiceLibrary.js)
+Componente que exibe a biblioteca de faturas, permitindo filtrar as faturas pelo número do cliente e realizar o download e exclusão das mesmas.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# frontend-lumi
+Configuração do TailwindCSS
+O TailwindCSS é utilizado para estilização de componentes. Certifique-se de que o tailwindcss está configurado corretamente no seu projeto.
